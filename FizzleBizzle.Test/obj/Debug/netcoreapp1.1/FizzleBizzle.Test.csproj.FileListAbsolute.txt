@@ -1,0 +1,14 @@
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\FizzleBizzle.Test.deps.json
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\FizzleBizzle.Test.runtimeconfig.json
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\FizzleBizzle.Test.runtimeconfig.dev.json
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\obj\Debug\netcoreapp1.1\FizzleBizzle.Test.csprojResolveAssemblyReference.cache
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\obj\Debug\netcoreapp1.1\FizzleBizzle.Test.AssemblyInfo.cs
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\FizzleBizzle.Test.dll
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\FizzleBizzle.Test.pdb
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\FizzleBizzle.Project.dll
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\bin\Debug\netcoreapp1.1\FizzleBizzle.Project.pdb
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\obj\Debug\netcoreapp1.1\FizzleBizzle.Test.dll
+C:\Users\SZ4WWN\Documents\Visual Studio 2017\Projects\FizzleBizzle\FizzleBizzle.Test\obj\Debug\netcoreapp1.1\FizzleBizzle.Test.pdb
