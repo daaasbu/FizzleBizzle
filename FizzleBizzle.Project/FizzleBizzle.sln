@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzleBizzle.Project", "FizzleBizzle.Project.csproj", "{C2320225-FEA9-43B8-99E5-5DFF28E82D75}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzleBizzle.Test", "..\FizzleBizzle.Test\FizzleBizzle.Test.csproj", "{17264805-CD56-4357-8A25-061C840716D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2320225-FEA9-43B8-99E5-5DFF28E82D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2320225-FEA9-43B8-99E5-5DFF28E82D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2320225-FEA9-43B8-99E5-5DFF28E82D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2320225-FEA9-43B8-99E5-5DFF28E82D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17264805-CD56-4357-8A25-061C840716D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17264805-CD56-4357-8A25-061C840716D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17264805-CD56-4357-8A25-061C840716D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17264805-CD56-4357-8A25-061C840716D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
