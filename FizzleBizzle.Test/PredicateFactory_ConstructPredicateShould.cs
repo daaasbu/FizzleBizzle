@@ -17,8 +17,8 @@ namespace FizzleBizzle.Test
         [InlineData("!=", 10, 11)]
         public void shouldReturnTrueGivenValueOf(string op, int n, int a)
         {
-            var opPredicate = new PredicateFactory(op, n);
-            Assert.True(opPredicate.ConstructPredicate()(a));
+            var opPredicate = new PredicateFactory(op, a);
+            Assert.True(opPredicate.ConstructPredicate()(n));
         }
 
         [Theory]
@@ -31,8 +31,8 @@ namespace FizzleBizzle.Test
         [InlineData("!=", 11, 11)]
         public void shouldReturnFalseGivenValueOf(string op, int n, int a)
         {
-            var opPredicate = new PredicateFactory(op, n);
-            Assert.True(opPredicate.ConstructPredicate()(a));
+            var opPredicate = new PredicateFactory(op, a);
+            Assert.True(opPredicate.ConstructPredicate()(n));
         }
     }
 }
