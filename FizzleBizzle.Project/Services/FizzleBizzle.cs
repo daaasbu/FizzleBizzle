@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FizzleBizzle.Interfaces;
-using FizzleBizzle.Extensions;
+using FizzleBizzle.Project.Interfaces;
+using FizzleBizzle.Project.Extensions;
 
-namespace FizzleBizzle.Services
+namespace FizzleBizzle.Project.Services
 {
     public class FizzleBizzle : IFizzleBizzle
     {

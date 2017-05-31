@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FizzleBizzle.Interfaces
+namespace FizzleBizzle.Project.Interfaces
 {
     interface IFizzleBizzle
     {
