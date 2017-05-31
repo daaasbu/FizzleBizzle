@@ -26,6 +26,7 @@ module.exports = (env) => {
                 '@angular/platform-browser-dynamic',
                 '@angular/router',
                 //'bootstrap',
+                'axios/index.js',
                 '@ng-bootstrap/ng-bootstrap/index.js',
                 'bootstrap/dist/css/bootstrap.css',
                 'es6-shim',
