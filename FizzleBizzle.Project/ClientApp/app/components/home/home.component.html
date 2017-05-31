@@ -27,20 +27,40 @@
                 </div>
             </div>
         </div>
+        <div [hidden]="start.value <= end.value || (start.pristine || end.pristine)"
+             class="alert alert-danger">
+            Start must be less than End
+        </div>
         <div class="form-group row">
             <div class="col-md-12 col-lg-6">
-                <input type="text" class="form-control" id="inputStart" placeholder="Start" required [(ngModel)]="model.start" name="start">
+                <input type="number" class="form-control" id="start" placeholder="Start" required [pattern]="integerRegex" [(ngModel)]="model.start" name="start" #start="ngModel">
+                <div [hidden]="start.valid || start.pristine"
+                     class="alert alert-danger">
+                     Start is required and must be an integer value
+                </div>
             </div>
             <div class="col-md-12 col-lg-6">
-                <input type="text" class="form-control" id="inputEnd" placeholder="Finish" required  [(ngModel)]="model.end" name="end">
+                <input type="number" class="form-control" id="inputEnd" placeholder="Finish" required [pattern]="integerRegex" [(ngModel)]="model.end" name="end" #end="ngModel">
+                <div [hidden]="end.valid || end.pristine"
+                     class="alert alert-danger">
+                    End is required and must be an integer value
+                </div>
             </div>
         </div>
         <div class="form-group row">
             <div class="col-md-12 col-lg-6">
-                <input type="text" class="form-control" id="inputFizz" placeholder="Fizz" required  [(ngModel)]="model.fizz" name="fizz">
+                <input type="number" class="form-control" id="inputFizz" placeholder="Fizz" required [pattern]="integerRegex" [(ngModel)]="model.fizz" name="fizz" #fizz="ngModel">
+                <div [hidden]="fizz.valid || fizz.pristine"
+                     class="alert alert-danger">
+                    Fizz is required and must be an integer value
+                </div>
             </div>
             <div class="col-md-12 col-lg-6">
-                <input type="text" class="form-control" id="inputBuzz" placeholder="Buzz" required  [(ngModel)]="model.buzz" name="buzz">
+                <input type="number" class="form-control" id="inputBuzz" placeholder="Buzz" required [pattern]="integerRegex" [(ngModel)]="model.buzz" name="buzz" #buzz="ngModel">
+                <div [hidden]="buzz.valid || buzz.pristine"
+                     class="alert alert-danger">
+                    Buzz is required and must be an integer value
+                </div>
             </div>
         </div>
         <div class="form-group row">
@@ -54,19 +74,24 @@
                 <span>Enable Bazz?</span>
             </div>
             <div class="col-md-12 col-lg-6" [hidden]="!bazzEnabled">
-                <input type="text" class="form-control" placeholder="Bazz" [required]="bazzEnabled" [(ngModel)]="model.bazz" name="bazz">
+                <input type="number" class="form-control" placeholder="Bazz" [required]="bazzEnabled" [pattern]="integerRegex" [(ngModel)]="model.bazz" name="bazz" #bazz="ngModel">
+                <div [hidden]="bazz.valid || bazz.pristine"
+                     class="alert alert-danger">
+                    Bazz is required and must be an integer value
+                </div>
             </div>
         </div>
         <div class="form-group row" [hidden]="!bazzEnabled">
             <div class="col-lg-6">
                 <select class="form-control" id="predicate" [required]="bazzEnabled" [(ngModel)]="model.op" name="op">
+                    <option value="" [selected]="bazzEnabled">Predicate</option>
                     <option *ngFor="let predicate of predicates" [value]="predicate">{{predicate}}</option>
                 </select>
             </div>
         </div>
         <div class="form-group row">
             <div class="col-lg-12">
-                <button type="button" (click)="generateOnClick()" class="btn btn-primary" [disabled]="!FizzBuzzForm.form.valid">Generate</button>
+                <button type="button" (click)="generateOnClick()" class="btn btn-primary" [disabled]="!FizzBuzzForm.form.valid || (start.value > end.value && !start.pristine && !end.pristine)">Generate</button>
             </div>
         </div>
     </form>

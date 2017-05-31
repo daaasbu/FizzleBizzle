@@ -12,12 +12,12 @@ import axios from 'axios';
 
 export class HomeComponent {
     bazzValue = '';
-    predicates = ['Predicate', '>', '>=', '<', '<=', '==', '!='];
+    predicates = ['>', '>=', '<', '<=', '==', '!='];
     model = new FizzBuzzForm(null, null, null, null, null, null);
     bazzEnabled = false;
     generateClicked = false;
     output: string[] = [];
-
+    integerRegex = /^-?[0-9][^\\.]*$/;
     submitted = false;
 
 
