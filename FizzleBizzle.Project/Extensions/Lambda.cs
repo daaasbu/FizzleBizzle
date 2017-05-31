@@ -18,24 +18,24 @@ namespace FizzleBizzle.Project.Extensions
         public static bool TryParse(string s, out Func<int, Func<int,bool>> result)
         {
             switch(s)
-            {
+            {  
                 case ">=":
-                    result = (x) => (y) => x >= y;
+                    result = (x) => (y) => y >= x;
                     return true;
                 case ">":
-                    result = (x) => (y) => x > y;
+                    result = (x) => (y) => y > x;
                     return true;
                 case "<":
-                    result = (x) => (y) => x < y;
+                    result = (x) => (y) => y < x;
                     return true;
                 case "<=":
-                    result = (x) => (y) => x <= y;
+                    result = (x) => (y) => y <= x;
                     return true;
                 case "==":
-                    result = (x) => (y) => x == y;
+                    result = (x) => (y) => y == x;
                     return true;
                 case "!=":
-                    result = (x) => (y) => x != y;
+                    result = (x) => (y) => y != x;
                     return true;
                 default:
                     result = null;

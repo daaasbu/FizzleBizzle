@@ -17,8 +17,8 @@ namespace FizzleBizzle.Project.Controllers
             return new Services.FizzleBizzle(fizz, buzz).FizzBuzz(start, end);
         }
 
-        [Route("/api/FizzBuzzBazz/{fizz}/{buzz}/{bazz}/{start}/{end}")]
-        public IEnumerable<string> GetFizzBuzzBazz(int fizz, int buzz, int start, int end, int bazz, string op)
+        [Route("/api/FizzBuzzBazz/{fizz}/{buzz}/{bazz}/{op}/{start}/{end}")]
+        public IEnumerable<string> GetFizzBuzzBazz(int fizz, int buzz, int bazz, string op, int start, int end)
         {
             var predicateFactory = new PredicateFactory(op, bazz);
             return new Services.FizzleBizzle(fizz, buzz).FizzBuzzBazz(start, end, predicateFactory.ConstructPredicate());
