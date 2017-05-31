@@ -1,0 +1,59 @@
+{
+	"id": "732c6d8e-97ba-360b-e64d-3a26ff7a19c6",
+	"name": "FizzleBizzle",
+	"description": "",
+	"order": [
+		"cc02028a-e724-68db-bc73-033cbe8551cf",
+		"6eb7d089-2a77-eb80-5ec4-327ce443cb49"
+	],
+	"folders": [],
+	"timestamp": 1496194938743,
+	"owner": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "6eb7d089-2a77-eb80-5ec4-327ce443cb49",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:5000/api/fizzbuzz/3/5/1/15",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "732c6d8e-97ba-360b-e64d-3a26ff7a19c6",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:5000/api/fizzbuzzbazz/2/3/6/>/1/15",
+			"description": "FizzBuzz test with fizz=3, buzz = 5",
+			"descriptionFormat": "html",
+			"time": 1496194990618,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "cc02028a-e724-68db-bc73-033cbe8551cf",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:5000/api/fizzbuzz/3/5/1/15",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1496194962430,
+			"name": "http://localhost:5000/api/fizzbuzzbazz/2/3/6/>/1/15",
+			"description": "FizzBuzzBazz test with fizz=2, buzz = 3, and bazz = x => x> 6",
+			"collectionId": "732c6d8e-97ba-360b-e64d-3a26ff7a19c6",
+			"responses": []
+		}
+	]
+}
