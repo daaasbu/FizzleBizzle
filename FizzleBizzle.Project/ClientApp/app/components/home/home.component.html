@@ -15,11 +15,14 @@
             </div>
             <div class="col-md-12 col-lg-6">
                 <div class="col-lg-12">
-                    <span>
+                    <span [hidden]="generateClicked">
                         For example:
                         <br />
-                        With Fizz - 3, Buzz = 5, start =1, and end = 15; the array looks
+                        With Fizz - 3, Buzz = 5, start = 1, and end = 15; the array looks
                         like: ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", ... , "14", "FizzBuzz"]
+                    </span>
+                    <span  [hidden]="!generateClicked" name="fizzBuzzOutput">
+                        {{output}}
                     </span>
                 </div>
             </div>
@@ -27,7 +30,6 @@
         <div class="form-group row">
             <div class="col-md-12 col-lg-6">
                 <input type="text" class="form-control" id="inputStart" placeholder="Start" required [(ngModel)]="model.start" name="start">
-                TODO: remove this: {{model.start}}
             </div>
             <div class="col-md-12 col-lg-6">
                 <input type="text" class="form-control" id="inputEnd" placeholder="Finish" required  [(ngModel)]="model.end" name="end">
@@ -49,22 +51,22 @@
                 </label>
             </div>
             <div class="col-md-6 col-lg-3">
-                <span>Enable Baz?</span>
+                <span>Enable Bazz?</span>
             </div>
             <div class="col-md-12 col-lg-6" [hidden]="!bazzEnabled">
-                <input type="text" class="form-control" placeholder="Bazz" required [(ngModel)]="model.bazz" name="bazz">
+                <input type="text" class="form-control" placeholder="Bazz" [required]="bazzEnabled" [(ngModel)]="model.bazz" name="bazz">
             </div>
         </div>
         <div class="form-group row" [hidden]="!bazzEnabled">
             <div class="col-lg-6">
-                <select class="form-control" id="predicate" required [(ngModel)]="model.op" name="op">
+                <select class="form-control" id="predicate" [required]="bazzEnabled" [(ngModel)]="model.op" name="op">
                     <option *ngFor="let predicate of predicates" [value]="predicate">{{predicate}}</option>
                 </select>
             </div>
         </div>
         <div class="form-group row">
             <div class="col-lg-12">
-                <button type="button" (click)="generateOnClick()" class="btn btn-primary">Generate</button>
+                <button type="button" (click)="generateOnClick()" class="btn btn-primary" [disabled]="!FizzBuzzForm.form.valid">Generate</button>
             </div>
         </div>
     </form>
