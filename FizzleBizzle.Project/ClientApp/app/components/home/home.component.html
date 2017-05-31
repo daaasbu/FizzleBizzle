@@ -3,44 +3,74 @@
 <h4> For Engagency</h4>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-12 col-lg-6">
-            1 of 3
+    <form>
+        <div class="form-group row">
+            <div class="col-lg-12">
+                <span>
+                    FizzBuzz generates an array of strings representing the consecutive
+                    sequence of  integers from start to end. When the integer is a multiple of Fizz, the
+                    string "Fizz" is added instead. Likewise, for multiples of Buzz, "Buzz" is added.
+                    For multiples of both Fizz and Buzz, "FizzBuzz" is added.
+                </span>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="col-lg-12">
+                    <span>
+                        For example:
+                        <br />
+                        With Fizz - 3, Buzz = 5, start =1, and end = 15; the array looks
+                        like: ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", ... , "14", "FizzBuzz"]
+                    </span>
+                </div>
+            </div>
         </div>
-        <div class="col-md-12 col-lg-6">
-            2 of 3 (wider)
+        <div class="form-group row">
+            <div class="col-md-12 col-lg-6">
+                <input type="text" class="form-control" id="inputStart" placeholder="Start">
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <input type="text" class="form-control" id="inputEnd" placeholder="Finish">
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-lg-6">
-            1 of 3
+        <div class="form-group row">
+            <div class="col-md-12 col-lg-6">
+                <input type="text" class="form-control" id="inputFizz" placeholder="Fizz">
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <input type="text" class="form-control" id="inputBuzz" placeholder="Buzz">
+            </div>
         </div>
-        <div class="col-md-12 col-lg-6">
-            2 of 3 (wider)
+        <div class="form-group row">
+            <div class="col-md-6 col-lg-4">
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="slider"></div>
+                </label>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <span>Enable Baz?</span>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <input type="text" class="form-control" id="inputBazz" placeholder="Bazz">
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-lg-6">
-            1 of 3
+        <div class="form-group row">
+            <div class="col-lg-6">
+                <select class="form-control">
+                    <option selected="selected">Predicate</option>
+                    <option>></option>
+                    <option>>=</option>
+                    <option><</option>
+                    <option><=</option>
+                    <option>==</option>
+                    <option>!=</option>
+                </select>
+            </div>
         </div>
-        <div class="col-md-12 col-lg-6">
-            2 of 3 (wider)
+        <div class="form-group row">
+            <div class="col-lg-12">
+                <button type="button" class="btn btn-primary">Generate</button>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-lg-4">
-            1 of 3
-        </div>
-        <div class="col-md-12 col-lg-4">
-            2 of 3 (wider)
-        </div>
-        <div class="col-md-12 col-lg-4">
-            3 of 3 (wider)
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            1 of 3
-        </div>
-    </div>
+    </form>
 </div>
