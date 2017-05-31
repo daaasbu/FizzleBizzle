@@ -1,6 +1,6 @@
 ﻿using System;
 using Xunit;
-using FizzleBizzle.Extensions;
+using FizzleBizzle.Project.Extensions;
 
 namespace FizzleBizzle.Tests
 {
@@ -11,7 +11,7 @@ namespace FizzleBizzle.Tests
         [InlineData(6, 3)]
         [InlineData(5, 5)]
         [InlineData(10, 5)]
-        public void ShouldReturnTrue(int a, int n)
+        public void ShouldReturnTrueGivenValueOf(int a, int n)
         {
             Assert.True(a.IsDivisible(n));
         }
@@ -21,7 +21,7 @@ namespace FizzleBizzle.Tests
         [InlineData(5, 3)]
         [InlineData(4, 5)]
         [InlineData(7, 5)]
-        public void ShouldReturnFalse(int a, int n)
+        public void ShouldReturnFalseGivenValueOf(int a, int n)
         {
             Assert.False(a.IsDivisible(n));
         }
