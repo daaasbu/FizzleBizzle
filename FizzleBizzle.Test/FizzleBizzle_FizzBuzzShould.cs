@@ -1,15 +1,13 @@
-using System;
 using Xunit;
-using FizzleBizzle.Services;
 
 namespace FizzleBizzle.Tests
 {
     public class FizzleBizzle_FizzBuzzShould
     {
-        private readonly Services.FizzleBizzle _fizzleBizzle;
+        private readonly Project.Services.FizzleBizzle _fizzleBizzle;
         public FizzleBizzle_FizzBuzzShould()
         {
-            _fizzleBizzle = new Services.FizzleBizzle(3, 5);
+            _fizzleBizzle = new Project.Services.FizzleBizzle(3, 5);
         }
         [Theory]
         [InlineData(1,15)]

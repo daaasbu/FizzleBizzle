@@ -1,15 +1,13 @@
-﻿using System;
-using Xunit;
-using FizzleBizzle.Services;
+﻿using Xunit;
 
 namespace FizzleBizzle.Tests
 {
     public class FizzleBizzle_FizzBuzzBazzShould
     {
-        private readonly Services.FizzleBizzle _fizzleBizzle;
+        private readonly Project.Services.FizzleBizzle _fizzleBizzle;
         public FizzleBizzle_FizzBuzzBazzShould()
         {
-            _fizzleBizzle = new Services.FizzleBizzle(2, 3);
+            _fizzleBizzle = new Project.Services.FizzleBizzle(2, 3);
         }
 
         [Theory]
