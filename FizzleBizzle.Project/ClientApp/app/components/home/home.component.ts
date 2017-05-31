@@ -26,6 +26,7 @@ export class HomeComponent {
 
     onSubmit() { this.submitted = true; }
 
+
     public generateOnClick() {
         if (this.bazzEnabled) {
             axios.get(location.origin + '/api/fizzbuzzbazz/' + this.model.fizz + '/' + this.model.buzz + '/' + this.model.bazz + '/' + this.model.op + '/' + this.model.start + '/' + this.model.end)

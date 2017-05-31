@@ -4,3 +4,8 @@
         padding-top: 50px;
     }
 }
+
+.background-container {
+    background-color: rgb(204,54,17);
+    color: white;
+}

@@ -1,17 +1,14 @@
-﻿/* The switch - the box around the slider */
-.switch {
+﻿.switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
 }
 
-    /* Hide default HTML checkbox */
-    .switch input {
-        display: none;
-    }
+.switch input {
+    display: none;
+}
 
-/* The slider */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -19,25 +16,25 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+    background-color: #563131;
+    -webkit-transition: .6s;
+    transition: .6s;
 }
 
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(204,54,17);
+    -webkit-transition: .6s;
+    transition: .6s;
+}
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: white;
 }
 
 input:focus + .slider {
@@ -55,5 +52,54 @@ input:checked + .slider:before {
 }
 
 .ng-invalid:not(form) {
-    border-left: 5px solid #a94442; /* red */
+    border-left: 5px solid #e9e913; /* yellow */
+}
+
+h4 {
+    font-weight:500;
+}
+
+hr {
+    border: 4px solid white;
+}
+
+.example-text {
+    font-weight: 500;
+    background-color: white;
+    color: rgb(204,54,17);
+    border-radius: 0 1em 0 1em;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: white;
+    border-color: rgb(204,54,17);
+    color: rgb(204,54,17);
+}
+
+.btn.disabled, .btn:disabled {
+    cursor: not-allowed;
+    opacity: .9;
+}
+
+.btn-primary {
+    color: rgb(204,54,17);
+    background-color: white;
+    border-color: white;
+    opacity: 1;
+}
+button {
+    width: 100%;
+}
+
+.alert-danger {
+    background-color: #ffffff;
+    color: #e12222;
+    border-color: #e12222;
+    font-size: 13px;
+    text-align: center;
+}
+
+.align-center {
+    margin:auto;
+    width:80%;
 }

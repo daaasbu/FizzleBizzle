@@ -1,42 +1,62 @@
-<h1>Fizzle Bizzle Test</h1>
-<hr />
-<h4> For Engagency</h4>
 
 <div class="container">
     <form #FizzBuzzForm="ngForm">
-        <div class="form-group">
+        <div class="form-group row">
+            <div class="col-lg-12">
+                <h1>Fizzle Bizzle Test</h1>
+                <hr />
+                <h4 class="float-right"> For Engagency</h4>
+            </div>
+        </div>
+        <div class="form-group row">
             <div class="col-lg-12">
                 <span>
-                    FizzBuzz generates an array of strings representing the consecutive
+                    <b>FizzBuzz</b> generates an array of strings representing the consecutive
                     sequence of  integers from start to end. When the integer is a multiple of Fizz, the
                     string "Fizz" is added instead. Likewise, for multiples of Buzz, "Buzz" is added.
                     For multiples of both Fizz and Buzz, "FizzBuzz" is added.
                 </span>
             </div>
-            <div class="col-md-12 col-lg-6">
-                <div class="col-lg-12">
-                    <span [hidden]="generateClicked">
-                        For example:
-                        <br />
-                        With Fizz - 3, Buzz = 5, start = 1, and end = 15; the array looks
-                        like: ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", ... , "14", "FizzBuzz"]
-                    </span>
-                    <span  [hidden]="!generateClicked" name="fizzBuzzOutput">
-                        {{output}}
-                    </span>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-12">
+                <div class="example-text">
+                    <div class="align-center" [hidden]="generateClicked">
+                        <p class="h5">
+                            For example:
+                        </p>
+                        <p>
+                            With Fizz = 3, Buzz = 5, start = 1, and end = 15; the array looks like:
+                        </p>
+                        <p>
+                            ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", ... , "14", "FizzBuzz"]
+                        </p>
+                    </div>
+
+                    <div class="align-center" [hidden]="!generateClicked" name="fizzBuzzOutput">
+                        <p class="h5">
+                            Output:
+                        </p>
+                        <p>
+                            [{{output.join(", ")}}]
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div [hidden]="start.value <= end.value || (start.pristine || end.pristine)"
-             class="alert alert-danger">
-            Start must be less than End
+        <div class="form-group row" [hidden]="start.value <= end.value || (start.pristine || end.pristine)">
+            <div class="col-lg-12">
+                <div class="alert alert-danger">
+                    Start must be less than End
+                </div>
+            </div>
         </div>
         <div class="form-group row">
             <div class="col-md-12 col-lg-6">
                 <input type="number" class="form-control" id="start" placeholder="Start" required [pattern]="integerRegex" [(ngModel)]="model.start" name="start" #start="ngModel">
                 <div [hidden]="start.valid || start.pristine"
                      class="alert alert-danger">
-                     Start is required and must be an integer value
+                    Start is required and must be an integer value
                 </div>
             </div>
             <div class="col-md-12 col-lg-6">
@@ -64,16 +84,16 @@
             </div>
         </div>
         <div class="form-group row">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-sm-6 col-md-6 col-lg-2">
                 <label class="switch">
                     <input type="checkbox" [(ngModel)]="bazzEnabled" name="bazzEnabled">
                     <div class="slider"></div>
                 </label>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-sm-6 col-md-6 col-lg-4 text-left">
                 <span>Enable Bazz?</span>
             </div>
-            <div class="col-md-12 col-lg-6" [hidden]="!bazzEnabled">
+            <div class="col-sm-12 col-md-12 col-lg-6" [hidden]="!bazzEnabled">
                 <input type="number" class="form-control" placeholder="Bazz" [required]="bazzEnabled" [pattern]="integerRegex" [(ngModel)]="model.bazz" name="bazz" #bazz="ngModel">
                 <div [hidden]="bazz.valid || bazz.pristine"
                      class="alert alert-danger">
